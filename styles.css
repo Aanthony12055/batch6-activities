@@ -1,0 +1,130 @@
+/* FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --primary-color: black;
+  --secodary-color: gray;
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  line-height: 1.54;
+}
+img {
+  width: 100%;
+  height: 80%;
+}
+/* Other Classes */
+.container {
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+/* */
+#about {
+  height: 100vh;
+  background-image: url("https://cdn.wallpapersafari.com/66/73/ZUhod6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#navbar {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0rem 3rem;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100vw;
+  height: 80;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
+}
+#navbar ul a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+#navbar ul a:hover {
+  color: rgb(241, 99, 99);
+}
+
+#about .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#title {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+.lead {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
+}
+#work {
+  text-align: center;
+  width: 100%;
+  padding: 5rem 0rem;
+  background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/313340/b418ea38c3d62733d41cad41eda39786df10db70.jpg");
+}
+#work .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 4rem;
+  grid-column-gap: 2rem;
+  margin-top: 2rem;
+}
+#work .container > h1 {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: bolder;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+#bottom-line {
+  height: 6px;
+  background-color: #fff;
+  width: 55%;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+#work .projects .box {
+  background-color: #eee;
+}
+#work .projects .box a {
+  cursor: pointer;
+  text-decoration: none;
+}
+#work .projects .box a p {
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+}
+.code {
+  color: #eee;
+  transform: 0.5s all ease;
+}
+#work .projects .box:hover .code {
+  color: var(--primary-color);
+}
