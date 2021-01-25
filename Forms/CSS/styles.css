@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+body {
+  font-family: "PT Sans";
+}
+/*Main*/
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+.container .parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .child_2 {
+  position: absolute;
+  top: 10px;
+}
+.child_2 img {
+  position: relative;
+  opacity: 90%;
+  margin: auto;
+  padding: auto;
+}
+.child_2 {
+  background-color: whitesmoke;
+  line-height: 1em;
+  padding: auto;
+}
+.pic2 {
+  width: 32em;
+  justify-content: center;
+}
+#survey-form {
+  padding-left: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+h1,
+p {
+  text-align: center;
+}
+form label {
+  color: #20639b;
+}
+/*form*/
+#name,
+#email,
+#number,
+#date-from,
+#date-to,
+#dropdown,
+#comment,
+#others {
+  width: 36em;
+}

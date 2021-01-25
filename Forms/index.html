@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Time-off Request Form</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+</head>
+<body>
+	<div class="container">
+            <video autoplay muted loop>
+                <source src="images/Network - 45961.mp4" type="video/mp4"> 
+            </video>
+            <div class="parent">
+                    <div class="child_2">
+                        <img src="images/logo.gif" class="pic2" alt="">
+                        <!--User Story #1: I can see a title with id="title" in H1 sized text.-->
+                        <h1 class="title">Time-Off Request Form</h1>
+                        <!--User Story #2: I can see a short explanation with id="description" in P sized text.-->
+                        <p id="description"><em>Request your leave details below.</em></p>  
+                        <!--User Story #3: I can see a form with id="survey-form".-->
+                        <form action="complete.html" id="survey-form">
+                            <!--User Story #4: Inside the form element, I am required to enter my name in a field with id="name".-->
+                                    <label for="name" id="name-label"><strong>Name</strong></label><br>
+                                    <input type="text" id="name" name="name" placeholder="Name" size="30" required>
+                                    <br>
+                             <!--User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
+                                 User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error-->       
+                                    <label for="email" id="email-label"><strong>Email</strong></label><br>
+                                    <input type="email" id="email" name="email" placeholder="Email" size="30" required>
+                                    <br>
+                            <!--User Story #7: Inside the form, I can enter a number in a field with id="number".
+                                User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+                                User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+                                User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+                                User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.-->   
+                                    <label for="employee number" id="number-label"><strong>ID Number</strong></label><br>
+                                    <input type="number" id="number" name="employee number" placeholder="ID No." width="50px" min="1000" max="3999" required>
+                                    <br>
+                                   
+                                    <label for="date" id="date-from"><strong>Date From</strong></label><br>
+                                    <input type="date" id="date-from" name="date-from">
+                                    <br>
+                                    <label for="date" id="date-to"><strong>Date To</strong></label><br>
+                                    <input type="date" id="date-to" name="date-to">
+                                    <br>
+                                    
+                                <label for="dropdown" id="job-pos"><strong>Department:</strong></label><br>
+                                <!--User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".-->
+                                <select name="drp-dwn" id="dropdown">
+                                    <option >--Select Department--</option>
+                                    <option value="Adminstration">Administration</option>
+                                    <option value="Finance">Finance</option>
+                                    <option value="Test Engineering">Test Engineering</option>
+                                    <option value="Product Engineering">Product Engineering</option>
+                                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                    <option value="Equipment Maintenance">Equipment Maintenance</option>
+                                    <option value="Production">Production</option>
+                                </select> 
+                                <br>
+                                <br>
+                                <!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.-->
+                                <label for="time-off" id="time-off"><strong>Type of Time-off:</strong></label><br>
+                                <input type="radio" name="time-off" id="time-off_v" value="time-off_v"><label for="time-off_v">Vacation Leave</label><br>
+                                <input type="radio" name="time-off" id="time-off_s" value="time-off_s"><label for="time-off_s">Sick Leave</label><br>
+                                <input type="radio" name="time-off" id="time-off_o" value="time-off_o"><label for="time-off_o">Others<br><input type="text" name="others" id="others" placeholder="Specify here"></label>
+                                <br>
+                                <br>
+                                <!--User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.-->
+                            <input type="checkbox" name="agreement" id="agreement" value="agreement" unchecked><label for="agreement">I understand that submitting request does not guarantees approval.</label> <br>
+                            <br>
+                            <!--User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.-->
+                            <label for="comments"><strong>Other Notes:</strong></label><br>
+                                <textarea name="comment" id="comment" cols="60" rows="5" size="100"></textarea><br>
+                            <!--User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.-->
+                            <div id="submit">
+                                <button id="submit" type="submit">Submit</button><br><br>
+                            </div>
+                        </form>  
+                    </div>
+            </div>
+            
+    </div>
+</body>
+</html>
